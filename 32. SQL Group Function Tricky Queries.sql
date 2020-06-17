@@ -12,8 +12,8 @@ SELECT deptno, AVG(sal)
 FROM emp
 GROUP BY deptno
 HAVING AVG(sal) = ( SELECT MAX(AVG(sal))
-									  FROM emp
-										GROUP BY deptno);
+		    FROM emp
+		    GROUP BY deptno);
 
 
 -- sesob emp er nam and salary show koro 
@@ -32,10 +32,10 @@ WHERE sal IN (SELECT MAX(sal)
               WHERE e2.deptno = e1.deptno);
 
 
---alternate no 2 :
+--alternate way 2 :
 SELECT ename, sal, e1.deptno 
 FROM emp e1 , (SELECT deptno, MAX(sal) as mx
-              FROM emp 
-							GROUP BY deptno) e2 
+               FROM emp 
+	       GROUP BY deptno) e2 
 WHERE sal = mx AND e1.deptno = e2.deptno;
 
