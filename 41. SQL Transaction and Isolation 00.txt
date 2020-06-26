@@ -1,0 +1,12 @@
+Correction :
+porer screenshot gulo te vul ache ekta.
+
+Correction is 
+
+Rollback -> ja ja change kora hoise segula cancel kore dibe. cancel korbe and ager database tai final hisabe rakhbe.
+I mistakenly wrote that database e changes update korbe. actually changes gula cancel kore dibe and setai final hisabe update korbe.
+
+Commit -> Commit dile changes gulo update korbe.
+porer ss gulay jegula bola hoise segulo commit er kaj.
+
+So read the next 5 ss carefully
