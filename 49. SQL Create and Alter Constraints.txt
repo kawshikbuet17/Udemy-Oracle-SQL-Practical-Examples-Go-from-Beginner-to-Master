@@ -1,0 +1,23 @@
+--Accessing Constraint 
+SELECT constraint_name, constraint_type, search_condition, status, validated
+FROM user_constraints
+WHERE table_name = 'TEST';
+
+
+-- Contraint enable disable 
+ALTER TABLE test DISABLE CONSTRAINT const_name;
+ALTER TABLE test ENABLE CONSTRAINT const_name;
+
+
+--enabling isnot possible with invalid data
+--to forcefully enable:
+ALTER TABLE test ENABLE NOVALIDATE CONSTRAINT const_name;
+--btw, eta PK te kaj korbena
+--validate er status o change korbena
+
+
+
+
+
+
+

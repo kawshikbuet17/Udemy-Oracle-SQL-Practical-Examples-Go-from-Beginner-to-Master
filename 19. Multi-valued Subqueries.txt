@@ -1,0 +1,19 @@
+COALESCE(v1, v2, v3, ... , vn)
+ei func first NOT NULL value pick korbe
+
+SELECT ename, job, COALESCE(salary, commission, stipend) AS earning
+FROM employee;
+
+eta dile ekta employee er salary, commission, stipend er moddhe
+jeta first NOT NULL seta kei earning hisabe dekhabe.
+
+
+
+
+
+
+
+
+
+
+

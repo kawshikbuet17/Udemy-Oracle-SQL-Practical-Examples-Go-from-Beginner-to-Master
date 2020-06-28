@@ -1,0 +1,5 @@
+select * from emp
+where deptno = (select deptno from dept
+		where dname in ('ACCOUNTING', 'RESEARCH'));
+
+eta kaj korbena. deptno IN dite hbe. karon eikhane multivalue return korbe.

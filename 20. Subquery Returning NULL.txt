@@ -1,0 +1,11 @@
+SELECT * FROM emp
+WHERE comm = (SELECT comm FROM emp
+	      WHERE ename = 'SCOTT');
+sothik result dibena. karon NULL return korbe. ar NULL er soman 
+jara thakbe tader k print korar kotha, setao korbena. bcz NULL IS NULL 
+not NULL=NULL
+solution:
+
+SELECT * FROM emp
+WHERE NVL(comm,-1) = (SELECT NVL(comm,-1) FROM emp
+	      	      WHERE ename = 'SCOTT');
